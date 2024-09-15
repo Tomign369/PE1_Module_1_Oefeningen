@@ -7,7 +7,13 @@ const userInput = readline.createInterface({input, output});
 
 
 // Voeg hier je eigen code in
+let name;
+let age;
+let favoriteGame;
 
+name = await userInput.question('wat is je naam? ');
+age = parseFloat(await userInput.question('hou oud ben je? '));
+favoriteGame = await userInput.question('Wat is je lievelingsgame?')
 
 
 console.log('Hallo '+ name +', ik hoor dat je '+ age +' jaar oud bent en dat je lievelingsgame '+ favoriteGame +' is.');
